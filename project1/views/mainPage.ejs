@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mainPage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mainPage">
+  <nav>
+    <div class="container">
+
+      <div>
+        <!-- div 를 추가하지 않고 여백을 두는 법? -->
+      </div>
+
+      <div class="page-item">
+        <ol>
+          <li class="header">PAGE1</li>
+          <li class="header">PAGE2</li>
+          <li class="header">PAGE3</li>
+        </ol>
+      </div>
+
+      <div class="menu-item">
+        <ol>
+          <li class="header menu">SEARCH</li>
+          <li class="header menu">LOGIN</li>
+        </ol>
+      </div>
+      
+    </div>
+  </nav>
+
+  <main class="mainContent">
+    <h1>Hello
+      <% if(name){ %>
+        <span class="name"><%= name %>!</span>
+      <% } else { %>
+        <span class="stranger">Stranger!</span>
+      <% } %>
+    </h1>
+  </main>
+</body>
+</html>
