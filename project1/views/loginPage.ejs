@@ -14,31 +14,17 @@
     <div class="mainContent">
         <div></div>
         <div>
-            <div id="login-title">Login with ID</div>
+            <div id="login-title"><h3>Login with ID</h3></div>
             <form action="" method="post" class="form">
                 <input type="text" class="text-input" id="id" placeholder="ID">
                 <input type="password" class="text-input" id="pw" placeholder="Password">
-                <input type="password" class="text-input" id="pwc" placeholder="Confirm password">
-                <input type="submit" value="SUBMIT">
+                <!-- <input type="password" class="text-input" id="pwc" placeholder="Confirm password"> -->
+                <input type="submit" id="login-submit-button" value="LOGIN">
             </form>
         </div>
-        <div></div>
     </div>
 
-    <div class="footer-container">
-        <div>        
-            <div class="page-item">
-            <ol>
-                <li class="footer">footer text 1 row 1</li>
-                <li class="footer">footer text 2 row 1</li>
-            </ol>
-            </div>
-        
-            <div class="menu-item">
-            <ol>
-                <li class="footer">footer text 1 row 2</li>
-            </ol>
-            </div>
-    </div>
+    <%-include('./footer.ejs') %>
+    
 </body>
 </html>
