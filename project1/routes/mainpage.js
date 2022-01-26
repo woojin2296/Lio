@@ -3,7 +3,7 @@ const router = express.Router();
 const path = require("path");
 
 router.get('', (req, res) => {
-    res.render(path.join(__dirname, '../views/mainPage'), { name: 'woojin'})
+    res.render(path.join(__dirname, '../views/mainPage'), { name: ""})
 })
 
 module.exports = router

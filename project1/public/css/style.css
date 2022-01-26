@@ -23,8 +23,13 @@ ol {
     text-align: center;
 }
 
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .menu-item {
-    min-width: 140px;
+    min-width: 180px;
 }
 
 .header {
@@ -35,7 +40,7 @@ ol {
 }
 
 .menu {
-    margin: 0px 10px
+    margin: 0px 10px;
 }
 
 .mainContent {
