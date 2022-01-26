@@ -1,0 +1,32 @@
+<nav>
+    <div class="container">
+
+        <div>
+        <!-- div 를 추가하지 않고 여백을 두는 법? -->
+        </div>
+
+        <div class="page-item">
+        <ol>
+            <li class="header">PAGE1</li>
+            <li class="header">PAGE2</li>
+            <li class="header">PAGE3</li>
+            <li class="header">PAGE4</li>
+            <li class="header">PAGE5</li>
+        </ol>
+        </div>
+
+        <div class="menu-item">
+        <ol>
+            <li class="header menu">SEARCH</li>
+            <li class="header menu">
+            <% if(name){ %>
+                PROFILE
+            <% } else { %>
+                <a href="login">LOGIN</a>
+            <% } %>
+            </li>
+        </ol>
+        </div>
+        
+    </div>
+</nav>
