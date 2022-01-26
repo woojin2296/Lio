@@ -8,15 +8,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="mainPage">
+    
     <%-include('./header.ejs') %>
-  <main class="mainContent">
-    <h1>Hello
-      <% if(name){ %>
-        <%= name %>!
-      <% } else { %>
-        Stranger!
-      <% } %>
-    </h1>
-  </main>
+
+    <div class="mainContent">
+        <div></div>
+        <div>
+            <div id="login-title">Login with ID</div>
+            <form action="" method="post" class="form">
+                <input type="text" class="text-input" id="id" placeholder="ID">
+                <input type="password" class="text-input" id="pw" placeholder="Password">
+                <input type="password" class="text-input" id="pwc" placeholder="Confirm password">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="footer-container">
+        <div>        
+            <div class="page-item">
+            <ol>
+                <li class="footer">footer text 1 row 1</li>
+                <li class="footer">footer text 2 row 1</li>
+            </ol>
+            </div>
+        
+            <div class="menu-item">
+            <ol>
+                <li class="footer">footer text 1 row 2</li>
+            </ol>
+            </div>
+    </div>
 </body>
 </html>
