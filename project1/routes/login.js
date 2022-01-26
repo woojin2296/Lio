@@ -6,4 +6,8 @@ router.get('', (req, res) => {
     res.render(path.join(__dirname, '../views/loginPage'), { name: ""})
 })
 
+router.post('', (req, res) => {
+    res.render(path.join(__dirname, '../views/loginPage'), { name: ""})
+})
+
 module.exports = router
