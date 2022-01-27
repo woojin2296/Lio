@@ -7,7 +7,7 @@ router.get('', (req, res) => {
 })
 
 router.post('', (req, res) => {
-    res.render(path.join(__dirname, '../views/iforgotPage'), { name: ""})
+    res.send('iforgot post : success')
 })
 
 module.exports = router

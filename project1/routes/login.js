@@ -7,7 +7,7 @@ router.get('', (req, res) => {
 })
 
 router.post('', (req, res) => {
-    res.render(path.join(__dirname, '../views/loginPage'), { name: ""})
+    res.send('login post : success')
 })
 
 module.exports = router

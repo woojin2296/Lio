@@ -7,7 +7,7 @@ router.get('', (req, res) => {
 })
 
 router.post('', (req, res) => {
-    res.render(path.join(__dirname, '../views/registerPage'), { name: ""})
+    res.send('register post : success')
 })
 
 module.exports = router

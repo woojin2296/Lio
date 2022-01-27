@@ -1,42 +1,18 @@
-.mainPage {
+body {
     background-color: #ffffff;
     margin: 0 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.container {
+/* Header ================================= */
+.header {
     background-color: #313132;
 
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 
     height: 44px;
-    min-width: 780px;
-}
-
-.logo {
-    min-width: 180px;
-    text-align: center;
-    line-height: 44px;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #d6d6d6;
-    transition: color 0.3s;
-}
-
-.logo a:hover {
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-ol {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px;
-    line-height: 44px;
-    text-align: center;
-    background-size: contain;
+    min-width: 720px;
 }
 
 .header a {
@@ -44,71 +20,83 @@ ol {
     color: #d6d6d6;
     transition: color 0.3s;
 }
-
 .header a:hover {
     color: #ffffff;
     transition: color 0.3s;
 }
 
-.page-item {
-    min-width: 512px;
+.header ol {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
 }
 
-.menu-item {
-    min-width: 180px;
-}
-
-.header {
+.header li {
+    display: inline;
     color: #d6d6d6;
+    margin: 0px 18px;
+    font-size: 13px;
+}
+
+.header-logo {
+    min-width: 150px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.header-page {
+    min-width: 400px;
+}
+
+.header-menu {
+    min-width: 150px;
+}
+
+#header-menu {
+    margin: 0px 10px;
+}
+
+/* Footer ================================= */
+
+.footer-container{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #f5f5f7;
+}
+
+.footer-container ol {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    height: 44px;
+}
+
+.footer-container li {
+    color: #4b4b4b;
     display: inline;
     margin: 0px 30px;
     font-size: 13px;
 }
 
-.menu {
-    margin: 0px 10px;
-}
+/* Main ================================= */
 
 .mainContent {
     width: 100%;
-    height: calc(100vh - 88px);
+    min-height: calc(100vh - 90px);
 
-    color: #494949;
-
-    text-align: center;
+    color: black;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.loginContent {
-    width: 100%;
-    height: calc(100vh - 88px);
-
-    color: #494949;
-
     text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-#login-title {
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-
-.form {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.text-input {
+.input_box{
     border: 1px solid #d6d6d6;
-    width: 311px;
+    width: 327px;
     height: 2.6em;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -119,12 +107,10 @@ ol {
     padding: 0 0 0 15px;
     margin-bottom: 10px;
 }
-
-.text-input:focus {
+.input_box:focus {
     outline:2px solid #0070c9; 
 }
-
-#login-submit-button {
+.submit_box {
     background-color: transparent;
     width: 100px;
     height: 30px;
@@ -133,46 +119,87 @@ ol {
     border-radius: 5px;
     transition: all 0.4s;
 }
-
-#login-submit-button:hover {
+.submit_box:hover {
     background-color: #4b4b4b;
     border: 1px solid #4b4b4b;
     color: #d6d6d6;
     transition: all 0.4s;
 }
-
-.footer-container{
-    height: 44px;
-    background-color: #f5f5f7;
+.blue-a {
+    text-decoration: none;
+    color: #0070c9;
+}
+.blue-a:hover {
+    text-decoration:underline;
 }
 
-.footer {
-    color: #4b4b4b;
-    display: inline;
-    margin: 0px 30px;
-    font-size: 13px;
+/* Login ================================= */
+.login h3 {
+    font-size: 21px;
 }
 
-#login-register {
+.login form {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.login-footer {
     text-align: center;
     border-style: solid;
-    border-style: solid;
-    border-image: linear-gradient(to right, #00000000 20%, #777777 40%, #777777 60%, #00000000 80%);
+    border-image: linear-gradient(to right, #00000000 40%, #777777 45%, #777777 55%, #00000000 60%);
     border-image-slice: 1;
     border-image-width: 1px 0 0 0;
     margin-top: 10px;
     padding-top: 10px;
 }
 
-#login-register a {
-    text-decoration: none;
+/* Register ================================= */
+
+.register h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
-#login-register a:visited {
+.register form {
+    border-style: solid;
+    border-image: linear-gradient(to right, #00000000 43%, #777777 48%, #777777 52%, #00000000 57%);
+    border-image-slice: 1;
+    border-image-width: 1px 0 0 0;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.register-name-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.register-name-container input {
+    width: 150px;
+    margin: 0 5px 0 5px
+}
+
+.register-footer {
+    text-align: center;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00000000 40%, #777777 45%, #777777 55%, #00000000 60%);
+    border-image-slice: 1;
+    border-image-width: 1px 0 0 0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.register-footer a {
     text-decoration: none;
     color: #0070c9;
 }
-
-#login-register a:hover {
+.register-footer a:hover {
     text-decoration:underline;
 }

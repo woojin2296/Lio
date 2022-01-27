@@ -7,23 +7,22 @@
   <title>LOGIN</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="mainPage">
+<body>
     
     <%-include('./header.ejs') %>
 
-    <div class="loginContent">
-        <div></div>
-        <div>
-            <div id="login-title"><h3>Login with ID</h3></div>
-            <form action="login/submit" method="post" class="form">
-                <input type="text" class="text-input" id="id" placeholder="ID">
-                <input type="password" class="text-input" id="pw" placeholder="Password">
-                <input type="submit" id="login-submit-button" value="LOGIN">
-                <div id="login-register">
-                    <a href="iforgot">Forgot ID or password?</a><br>
-                    Don’t have an ID? <a href="register">Create yours now.</a>
-                </div>
+    <div class="mainContent">
+        <div class="login">
+            <h3>Login with ID</h3>
+            <form action="" method="post">
+                <input type="text" class="input_box" id="login-id" placeholder="ID" autocomplete="off">
+                <input type="password" class="input_box" id="login-pw" placeholder="Password">
+                <input type="submit" class="submit_box" value="LOGIN">
             </form>
+            <div class="login-footer">
+                <a class="blue-a" href="iforgot">Forgot ID or password?</a><br>
+                Don’t have an ID? <a class="blue-a" href="register">Create yours now.</a>
+            </div>
         </div>
     </div>
 

@@ -7,22 +7,24 @@
   <title>REGISTER</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="mainPage">
+<body>
     
     <%-include('./header.ejs') %>
 
-    <div class="loginContent">
-        <div></div>
-        <div>
-            <div id="login-title"><h3>Create Your ID</h3></div>
-            <form action="login/submit" method="post" class="form">
-                <input type="text" class="text-input" id="id" placeholder="ID">
-                <input type="password" class="text-input" id="pw" placeholder="Password">
-                <input type="submit" id="login-submit-button" value="LOGIN">
-                <div id="login-register">
-                    <a href="iforgot">Forgot ID or password?</a><br>
-                    Don’t have an ID? <a href="register">Create yours now.</a>
+    <div class="mainContent">
+        <div class="register">
+            <h3>Create Your ID</h3>
+            Already have an ID? <a class="blue-a" href="iforgot">Find it here</a>
+            <form action="" method="post">
+                <div class='register-name-container'>
+                    <input type="text" class="input_box" id="register-fname" placeholder="First name" autocomplete="off">
+                    <input type="text" class="input_box" id="register-lname" placeholder="Last name" autocomplete="off">
                 </div>
+                <input type="text" class="input_box" id="register-email" placeholder="Email" autocomplete="off">
+                <input type="text" class="input_box" id="register-id" placeholder="ID" autocomplete="off">
+                <input type="password" class="input_box" id="register-pw" placeholder="Password">
+                <input type="password" class="input_box" id="register-pwc" placeholder="Confirm password">
+                <input type="submit" class="submit_box" value="REGISTER">
             </form>
         </div>
     </div>
