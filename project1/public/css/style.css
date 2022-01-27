@@ -23,20 +23,12 @@
 .logo a {
     text-decoration: none;
     color: #d6d6d6;
-    animation: test-color-change-leave 0.3s;
-}
-@keyframes test-color-change-leave {
-    0% { color: #ffffff; }
-    100% {color: #d6d6d6; }
+    transition: color 0.3s;
 }
 
 .logo a:hover {
     color: #ffffff;
-    animation: test-color-change-hover 0.3s;
-}
-@keyframes test-color-change-hover {
-    0% { color: #d6d6d6; }
-    100% {color: #ffffff; }
+    transition: color 0.3s;
 }
 
 ol {
@@ -50,20 +42,12 @@ ol {
 .header a {
     text-decoration: none;
     color: #d6d6d6;
-    animation: test-color-change-leave 0.3s;
-}
-@keyframes test-color-change-leave {
-    0% { color: #ffffff; }
-    100% {color: #d6d6d6; }
+    transition: color 0.3s;
 }
 
 .header a:hover {
     color: #ffffff;
-    animation: test-color-change-hover 0.3s;
-}
-@keyframes test-color-change-hover {
-    0% { color: #d6d6d6; }
-    100% {color: #ffffff; }
+    transition: color 0.3s;
 }
 
 .page-item {
@@ -147,40 +131,14 @@ ol {
     border: 1px solid #d6d6d6;
     color: #4b4b4b;
     border-radius: 5px;
-    animation: submit-leave 0.2s;
-}
-
-@keyframes submit-leave {
-    0% { 
-        color: #d6d6d6;
-        border: 1px solid #4b4b4b;
-        background-color: #4b4b4b;
-    }
-    100% {
-         color: #4b4b4b;
-        border: 1px solid #d6d6d6;
-        background-color: #d6d6d6;
-    }
+    transition: all 0.4s;
 }
 
 #login-submit-button:hover {
     background-color: #4b4b4b;
     border: 1px solid #4b4b4b;
     color: #d6d6d6;
-    animation: submit-hover 0.2s;
-}
-
-@keyframes submit-hover {
-    0% { 
-        color: #4b4b4b;
-        border: 1px solid #d6d6d6;
-        background-color: #d6d6d6; 
-    }
-    100% {
-        color: #d6d6d6;
-        border: 1px solid #4b4b4b;
-        background-color: #4b4b4b; 
-    }
+    transition: all 0.4s;
 }
 
 .footer-container{
@@ -208,6 +166,11 @@ ol {
 
 #login-register a {
     text-decoration: none;
+}
+
+#login-register a:visited {
+    text-decoration: none;
+    color: #0070c9;
 }
 
 #login-register a:hover {
