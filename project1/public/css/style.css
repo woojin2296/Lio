@@ -185,21 +185,3 @@ body {
     width: 150px;
     margin: 0 5px 0 5px
 }
-
-.register-footer {
-    text-align: center;
-    border-style: solid;
-    border-image: linear-gradient(to right, #00000000 40%, #777777 45%, #777777 55%, #00000000 60%);
-    border-image-slice: 1;
-    border-image-width: 1px 0 0 0;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.register-footer a {
-    text-decoration: none;
-    color: #0070c9;
-}
-.register-footer a:hover {
-    text-decoration:underline;
-}

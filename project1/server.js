@@ -1,8 +1,12 @@
 const express = require('express')
 const server = express()
+const bodyParser = require('body-parser')
 
 server.use(express.static('public'))
 server.set('view engine', 'ejs')
+
+server.use(bodyParser.json())
+server.use(bodyParser.urlencoded({extended:true}))
 
 server.use('/', require('./routes/main'))
 
