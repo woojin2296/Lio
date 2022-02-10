@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순룸</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="root">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="/">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>검색조건</li>
+                    <li>찜 목록</li>
+                    <li>방 양도</li>
+                    <li>팀 소개</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main">
+            
+            <div class="map">
+        
+            </div>
+
+            <div class="content">
+                <% if (link == "main") { %>
+                    <%-include('./main.ejs') %>
+                <% } else { %>
+                    Stranger!
+                <% } %>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

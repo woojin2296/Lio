@@ -20,7 +20,7 @@ server.use('/page3', require('./routes/page/page3'))
 server.use('/page4', require('./routes/page/page4'))
 server.use('/page5', require('./routes/page/page5'))
 
-const port = process.env.PORT || 8001
+const port = process.env.PORT || 80
 
 server.listen(port, () => {
   console.log(`Server Running at ${port}`)
