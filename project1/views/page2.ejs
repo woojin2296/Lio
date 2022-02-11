@@ -27,13 +27,16 @@
 			renderer.setSize( window.innerWidth, height);
 			document.body.appendChild( renderer.domElement );
 
+			// var geometry = new THREE.Box3(mn,mx);
+			// var material = new THREE.MeshBasicMaterial({color: 0xff11ff, wireframe: true});
+			// var bBox = new THREE.Mesh(geometry, material);
+			// scene.add(bBox);
+
 			const geometry = new THREE.SphereGeometry();
 			var texture = new THREE.TextureLoader().load('img/earthmap.jpg');
 			const material = new THREE.MeshBasicMaterial({map : texture, overdraw: 0.1});
 			const earth = new THREE.Mesh( geometry, material );
-		
-
-			scene.add( earth );
+			scene.add(earth);
 
 			camera.position.z = 5;
 
@@ -47,6 +50,8 @@
 			};
 
 			animate();
+
+			
 		</script>
 	</div>		
 
